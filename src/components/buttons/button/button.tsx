@@ -1,7 +1,10 @@
-import {css} from "~theme/stitches.config";
+import { styled } from "../../../theme/stitches.config";
 
-export const buttonTheme = css({
+export const Button = styled('button', {
+  cursor: 'pointer',
   border: '0 none',
+  fontWeight: '$bold',
+  textShadow: '0 1px 2px $colors$black',
   '&[disabled]': {
     color: '$gray900',
     backgroundColor: '$gray500',
@@ -14,36 +17,36 @@ export const buttonTheme = css({
   variants: {
     size: {
       1: {
-        minHeight: '32px',
-        minWidth: '200px',
-        padding: '$1 $2',
+        height: '32px',
+        padding: '$1 $3',
       },
       2: {
-        minHeight: '42px',
-        minWidth: '250px',
-        padding: '$2 $3',
+        height: '38px',
+        padding: '$2 $4',
       },
       3: {
-        minHeight: '52px',
-        minWidth: '300px',
-        padding: '$3 $4',
+        height: '42px',
+        padding: '$3 $5',
       },
     },
     color: {
       primary: {
+        color: '$textColor',
         backgroundColor: '$primary',
         '&:hover': {
-          backgroundColor: '$primary200',
+          backgroundColor: '$primary800',
         },
       },
       secondary: {
+        color: '$textColor',
         backgroundColor: '$secondary',
         '&:hover': {
           backgroundColor: '$secondary200',
         },
       },
       error: {
-        backgroundColor: 'tomato',
+        color: '$textColor',
+        backgroundColor: 'red',
         '&:hover': {
           backgroundColor: 'green',
         },
@@ -62,5 +65,13 @@ export const buttonTheme = css({
         borderRadius: '500rem',
       },
     },
+  },
+
+  compoundVariants: [],
+  defaultVariants: {
+    size: '1',
+    color: 'primary',
+    depth: '1',
+    shape: 'pill',
   },
 });

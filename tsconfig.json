@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": ["ES2015", "DOM", "dom.iterable"],
+    "types": ["jest"],
+    "esModuleInterop": true,
+    "rootDir": "./",
+    "baseUrl": "./src",
+    "paths": {
+      "~": ["src/*"],
+    }
+  }
+}

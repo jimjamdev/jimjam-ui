@@ -1,4 +1,5 @@
-import {styled} from "~theme/stitches.config";
+import { styled } from "../../theme/stitches.config";
+
 
 export const Container = styled('div', {
     marginX: 'auto',

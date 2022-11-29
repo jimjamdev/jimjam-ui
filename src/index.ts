@@ -1,4 +1,4 @@
-export * from '~theme/stitches.config';
-export { Button } from '~ui/buttons';
-export { Banner } from '~ui/banners';
-export { Toolbar } from '~ui/toolbar';
+export * from './theme/stitches.config';
+export { Button } from './components/buttons';
+export { Banner } from './components/banners';
+export { Toolbar } from './components/toolbar';
